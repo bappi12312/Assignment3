@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment 3</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <header>
+  <header class="container mx-auto">
     
 
 <nav class="container mx-auto">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto p-4">
    <div class="flex gap-3">
-    <button data-collapse-toggle="navbar-sticky" type="button" class="-mr-12 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+    <button data-collapse-toggle="navbar-sticky" type="button" class=" inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
       <span class="sr-only">Open main menu</span>
       <img src="Images/frame2.svg" alt="">
   </button>
   <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
 
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Hockey<span class="text-red-600 text-2xl">’</span>s</span>
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Hockey<span class="text-red-600 text-3xl">’</span>s</span>
   </a>
    </div>
   <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -50,6 +51,58 @@
   </div>
   </div>
 </nav>
+
+
+
+<div id="controls-carousel" class="relative container mx-auto max-w-screen-xl p-4" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-[60vh]">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="Images/2.png" class="absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover bg-center" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="Images/1.png" class="absolute h-full block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover bg-center" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="Images/3.png" class="absolute h-full block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover bg-center" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="Images/4.png" class="absolute h-full block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover bg-center" alt="...">
+      </div>
+
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+
+
+</div>
+
+<div class="container mx-auto px-4 lg:px-0 grid justify-center md:justify-end text-white">
+  <div class="bg-black p-3 md:p-8 rounded-xl relative md:-translate-x-44 md:-translate-y-60 z-40">
+    <h2 class="text-xl md:text-4xl ">Meet all the heroes from the field</h2>
+    <p class=" opacity-60">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
+  </div>
+</div>
+
 
   </header>
   <main></main>
